@@ -41,6 +41,15 @@ TagManager:
   - name: Background
     uniqueID: 3713799045
     locked: 0
+  - name: Mountain Range
+    uniqueID: 1060552047
+    locked: 0
+  - name: Trees
+    uniqueID: 1828765133
+    locked: 0
+  - name: Mountains
+    uniqueID: 2807033077
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
