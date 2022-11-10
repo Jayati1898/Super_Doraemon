@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 117518186}
   - component: {fileID: 117518185}
   - component: {fileID: 117518187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 163073809}
   - component: {fileID: 163073808}
   - component: {fileID: 163073810}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 185566202}
   - component: {fileID: 185566201}
   - component: {fileID: 185566204}
+  - component: {fileID: 185566205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -421,18 +422,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.19366169, y: 0.24207044}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 16, y: 16}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 12.318457, y: 15.513805}
   m_EdgeRadius: 0
 --- !u!212 &185566202
 SpriteRenderer:
@@ -475,7 +476,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0a6fbfb8eda4e574d9f147b94d2acc68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e27e12fa1aa4d094e8c17454518100fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -494,8 +495,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185566200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.2, y: -0.54, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.17, y: -1.35, z: 0}
+  m_LocalScale: {x: 0.15318215, y: 0.15318215, z: 0.15318215}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -521,7 +522,24 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &185566205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185566200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032d3c1e195b6a54d923b9fa12aa852c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 7
+  jumpForce: 9
 --- !u!1 &218249958
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +552,7 @@ GameObject:
   - component: {fileID: 218249961}
   - component: {fileID: 218249960}
   - component: {fileID: 218249962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +685,7 @@ GameObject:
   - component: {fileID: 305329150}
   - component: {fileID: 305329149}
   - component: {fileID: 305329151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +818,7 @@ GameObject:
   - component: {fileID: 306935385}
   - component: {fileID: 306935384}
   - component: {fileID: 306935386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1035,7 @@ GameObject:
   - component: {fileID: 461810894}
   - component: {fileID: 461810893}
   - component: {fileID: 461810895}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.69, y: 0, z: -10}
   m_LocalScale: {x: 0.92045, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1266,7 +1284,7 @@ GameObject:
   - component: {fileID: 529738011}
   - component: {fileID: 529738010}
   - component: {fileID: 529738012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1399,7 +1417,7 @@ GameObject:
   - component: {fileID: 564886540}
   - component: {fileID: 564886539}
   - component: {fileID: 564886541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1550,7 @@ GameObject:
   - component: {fileID: 670452233}
   - component: {fileID: 670452232}
   - component: {fileID: 670452234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,7 +1684,7 @@ GameObject:
   - component: {fileID: 978322551}
   - component: {fileID: 978322554}
   - component: {fileID: 978322553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1818,7 +1836,7 @@ GameObject:
   - component: {fileID: 1284168138}
   - component: {fileID: 1284168137}
   - component: {fileID: 1284168139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1969,7 @@ GameObject:
   - component: {fileID: 1379305760}
   - component: {fileID: 1379305759}
   - component: {fileID: 1379305761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2084,7 +2102,7 @@ GameObject:
   - component: {fileID: 1490722948}
   - component: {fileID: 1490722947}
   - component: {fileID: 1490722949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2235,7 @@ GameObject:
   - component: {fileID: 1608901835}
   - component: {fileID: 1608901834}
   - component: {fileID: 1608901836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2350,7 +2368,7 @@ GameObject:
   - component: {fileID: 1705781159}
   - component: {fileID: 1705781158}
   - component: {fileID: 1705781160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2483,7 +2501,7 @@ GameObject:
   - component: {fileID: 1753456259}
   - component: {fileID: 1753456258}
   - component: {fileID: 1753456260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2616,7 +2634,7 @@ GameObject:
   - component: {fileID: 1872776585}
   - component: {fileID: 1872776584}
   - component: {fileID: 1872776586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2749,7 +2767,7 @@ GameObject:
   - component: {fileID: 1927100089}
   - component: {fileID: 1927100088}
   - component: {fileID: 1927100090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2882,7 +2900,7 @@ GameObject:
   - component: {fileID: 2030165211}
   - component: {fileID: 2030165210}
   - component: {fileID: 2030165212}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3015,7 +3033,7 @@ GameObject:
   - component: {fileID: 2091472288}
   - component: {fileID: 2091472287}
   - component: {fileID: 2091472289}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
