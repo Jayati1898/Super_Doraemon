@@ -2948,7 +2948,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   moveSpeed: 7
-  jumpForce: 9
+  jumpForce: 8
 --- !u!1 &186475421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,7 +7267,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -7284,7 +7284,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.063429
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7308,7 +7308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62, y: 1.25, z: -10}
+  m_LocalPosition: {x: -2.18, y: -0.01, z: -10}
   m_LocalScale: {x: 6.19, y: 0.9722842, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
