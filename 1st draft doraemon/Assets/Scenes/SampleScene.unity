@@ -2173,7 +2173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40bf3c6e34d275428e63727e3b6e4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pineapple_bun_text: {fileID: 0}
+  pineapple_bun_text: {fileID: 925226993}
 --- !u!95 &185566208
 Animator:
   serializedVersion: 4
