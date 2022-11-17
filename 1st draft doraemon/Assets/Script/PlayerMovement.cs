@@ -17,9 +17,20 @@ public class PlayerMovement : MonoBehaviour
 
     //private enum MovementState { idle, running, jumping, falling }
 
-    //[SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     // Start is called before the first frame update
+
+
+
+
+    //variable for mobile control
+    private bool moveLeft; // define boolean variable for moving left
+    private bool moveRight; // define boolean variable for moving right
+
+
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,14 +42,52 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        //dirX = Input.GetAxisRaw("Horizontal");
+        //rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+
+        //test
+        
+        if (Input.GetAxisRaw("Horizontal") != 0f)
+        {
+            dirX = Input.GetAxisRaw("Horizontal");
+            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            // if I press the left button
+            if (moveLeft)
+            {
+                dirX = -moveSpeed;
+                rb.velocity = new Vector2(dirX, rb.velocity.y);
+                //UpdateAnimationState();
+            }
+
+            // if I press the right button
+
+            else if (moveRight)
+            {
+                dirX = moveSpeed;
+                rb.velocity = new Vector2(dirX, rb.velocity.y);
+                //UpdateAnimationState();
+            }
+
+            // if I don't press any button
+            else
+            {
+                dirX = 0f;
+                rb.velocity = new Vector2(dirX, rb.velocity.y);
+                //UpdateAnimationState();
+            }
+        }
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             //jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
+
+
+        MovementPlayer();
 
         //UpdateAnimationState();
     }
@@ -49,33 +98,110 @@ public class PlayerMovement : MonoBehaviour
 
         //if (dirX > 0f)
         //{
-    //        state = MovementState.running;
-    //        sprite.flipX = false;
-    //    }
-    //    else if (dirX < 0f)
-    //    {
-    //        state = MovementState.running;
-    //        sprite.flipX = true;
-    //    }
-    //    else
-    //    {
-    //        state = MovementState.idle;
-    //    }
+            //state = MovementState.running;
+            //sprite.flipX = false;
+        //}
+        //else if (dirX < 0f)
+        //{
+            //state = MovementState.running;
+            //sprite.flipX = true;
+        //}
+        //else
+        //{
+            //state = MovementState.idle;
+        //}
 
-    //    if (rb.velocity.y > .1f)
-    //    {
-    //        state = MovementState.jumping;
-    //    }
-    //    else if (rb.velocity.y < -.1f)
-    //    {
-    //        state = MovementState.falling;
-    //    }
+        //if (rb.velocity.y > .1f)
+        //{
+            //state = MovementState.jumping;
+        //}
+        //else if (rb.velocity.y < -.1f)
+        //{
+            //state = MovementState.falling;
+        //}
 
-    //    anim.SetInteger("state", (int)state);
+        //anim.SetInteger("state", (int)state);
     //}
 
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
+
+
+
+
+
+
+
+
+
+
+    //code for mobile controll
+
+    // I am pressing the left button
+    public void PointerDownLeft()
+    {
+        moveLeft = true;
+        //state = MovementState.running;
+        sprite.flipX = true;
+    }
+
+    // I am not pressing the left button
+    public void PointerUpLeft()
+    {
+        moveLeft = false;
+        //state = MovementState.idle;
+    }
+
+    // repeat the above two steps with the right button
+
+    // I am pressing the right button
+    public void PointerDownRight()
+    {
+        moveRight = true;
+        //state = MovementState.running;
+        sprite.flipX = false;
+    }
+
+    // I am not pressing the right button
+    public void PointerUpRight()
+    {
+        moveRight = false;
+        //state = MovementState.idle;
+    }
+
+    private void MovementPlayer()
+    {
+        // if I press the left button
+        if (moveLeft)
+        {
+            dirX = -moveSpeed;
+            //UpdateAnimationState();
+        }
+
+        // if I press the right button
+
+        else if (moveRight)
+        {
+            dirX = moveSpeed;
+            //UpdateAnimationState();
+        }
+
+        // if I don't press any button
+        else
+        {
+            dirX = 0f;
+            //UpdateAnimationState();
+        }
+    }
+
+    public void jumpButton()
+    {
+        if (IsGrounded())
+        {
+            rb.velocity = Vector2.up * jumpForce;
+        }
+    }
+
 }
