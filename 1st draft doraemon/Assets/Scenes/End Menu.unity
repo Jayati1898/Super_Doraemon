@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163.23077, y: -103.74724}
-  m_SizeDelta: {x: 137.5827, y: 140.5921}
+  m_AnchoredPosition: {x: 361.09552, y: -212.73953}
+  m_SizeDelta: {x: 332.0941, y: 298.209}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366309524
 MonoBehaviour:
@@ -389,8 +389,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145.7126, y: -103.75}
-  m_SizeDelta: {x: 239.2079, y: 140.59}
+  m_AnchoredPosition: {x: -321.7788, y: -201.0056}
+  m_SizeDelta: {x: 591.3403, y: 274.7357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329567009
 MonoBehaviour:
@@ -435,7 +435,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1329567010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1329567010
 MonoBehaviour:
   m_ObjectHideFlags: 0
