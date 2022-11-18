@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 44934910}
   - component: {fileID: 44934909}
   - component: {fileID: 44934908}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (4)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -2516,7 +2516,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.92679024}
+  m_Offset: {x: 0, y: -0.19570518}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2527,7 +2527,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.83, y: 0.44641954}
+  m_Size: {x: 4.83, y: 1.6149349}
   m_EdgeRadius: 0
 --- !u!114 &199187950
 MonoBehaviour:
@@ -2591,7 +2591,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00002670288, y: -0.34144974}
+  m_Offset: {x: -0.00002670288, y: 1.0042498}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2602,7 +2602,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.765748, y: 1.6689177}
+  m_Size: {x: 4.765748, y: 0.41292876}
   m_EdgeRadius: 0
 --- !u!212 &199187954
 SpriteRenderer:
@@ -3219,7 +3219,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00002670288, y: -0.34144974}
+  m_Offset: {x: -0.00002670288, y: 0.8696594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3230,7 +3230,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.765748, y: 1.6689177}
+  m_Size: {x: 4.765748, y: 0.50268847}
   m_EdgeRadius: 0
 --- !u!212 &296632928
 SpriteRenderer:
@@ -3310,10 +3310,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.92679024}
+  m_Offset: {x: 0, y: -0.4188941}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3324,7 +3324,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.83, y: 0.44641954}
+  m_Size: {x: 4.83, y: 1.7024711}
   m_EdgeRadius: 0
 --- !u!114 &296632931
 MonoBehaviour:
@@ -3828,7 +3828,7 @@ GameObject:
   - component: {fileID: 365686464}
   - component: {fileID: 365686463}
   - component: {fileID: 365686462}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (5)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -3897,7 +3897,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -6378,7 +6378,7 @@ GameObject:
   - component: {fileID: 679453873}
   - component: {fileID: 679453872}
   - component: {fileID: 679453871}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (2)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -6447,7 +6447,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -6891,7 +6891,7 @@ GameObject:
   - component: {fileID: 727119992}
   - component: {fileID: 727119991}
   - component: {fileID: 727119990}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (6)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -6960,7 +6960,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -9008,7 +9008,7 @@ GameObject:
   - component: {fileID: 927692861}
   - component: {fileID: 927692860}
   - component: {fileID: 927692859}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (1)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -9077,7 +9077,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -9539,7 +9539,7 @@ GameObject:
   - component: {fileID: 971704069}
   - component: {fileID: 971704068}
   - component: {fileID: 971704067}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -9608,7 +9608,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -11478,7 +11478,7 @@ GameObject:
   - component: {fileID: 1162097604}
   - component: {fileID: 1162097603}
   - component: {fileID: 1162097602}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (7)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -11547,7 +11547,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -11863,7 +11863,7 @@ GameObject:
   - component: {fileID: 1174547160}
   - component: {fileID: 1174547159}
   - component: {fileID: 1174547158}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (3)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -11932,7 +11932,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -14892,7 +14892,7 @@ GameObject:
   - component: {fileID: 1527006502}
   - component: {fileID: 1527006501}
   - component: {fileID: 1527006500}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (8)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -14961,7 +14961,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -16363,7 +16363,7 @@ GameObject:
   - component: {fileID: 1751007932}
   - component: {fileID: 1751007931}
   - component: {fileID: 1751007930}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (10)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -16432,7 +16432,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
@@ -18610,7 +18610,7 @@ GameObject:
   - component: {fileID: 1970864474}
   - component: {fileID: 1970864473}
   - component: {fileID: 1970864472}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Moving Platform (9)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -18679,7 +18679,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000025510788, y: 0.04007122}
