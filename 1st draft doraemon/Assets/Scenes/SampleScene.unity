@@ -4980,6 +4980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566203}
+  yOffset: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
