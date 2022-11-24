@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
-    //private Animator anim;
+    private Animator anim;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
 
-    //private enum MovementState { idle, running, jumping, falling }
+    private enum MovementState { idle, running, jumping, falling }
+    MovementState state;
 
     [SerializeField] private AudioSource jumpSoundEffect;
 
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         {
             dirX = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+            //UpdateAnimationState();
         }
         else
         {
@@ -84,44 +86,45 @@ public class PlayerMovement : MonoBehaviour
         {
             //jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
         }
 
 
         MovementPlayer();
 
-        //UpdateAnimationState();
+        UpdateAnimationState();
     }
 
-    //private void UpdateAnimationState()
-    //{
-        //MovementState state;
+    private void UpdateAnimationState()
+    {
+        MovementState state;
 
-        //if (dirX > 0f)
-        //{
-            //state = MovementState.running;
-            //sprite.flipX = false;
-        //}
-        //else if (dirX < 0f)
-        //{
-            //state = MovementState.running;
-            //sprite.flipX = true;
-        //}
-        //else
-        //{
-            //state = MovementState.idle;
-        //}
+        if (dirX > 0f)
+        {
+            state = MovementState.running;
+            sprite.flipX = false;
+        }
+        else if (dirX < 0f)
+        {
+            state = MovementState.running;
+            sprite.flipX = true;
+        }
+        else
+        {
+            state = MovementState.idle;
+        }
 
-        //if (rb.velocity.y > .1f)
-        //{
-            //state = MovementState.jumping;
-        //}
-        //else if (rb.velocity.y < -.1f)
-        //{
-            //state = MovementState.falling;
-        //}
+        if (rb.velocity.y > .1f)
+        {
+            state = MovementState.jumping;
+        }
+        else if (rb.velocity.y < -.1f)
+        {
+            state = MovementState.falling;
+        }
 
-        //anim.SetInteger("state", (int)state);
-    //}
+        anim.SetInteger("state", (int)state);
+    }
 
     private bool IsGrounded()
     {
@@ -143,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
-        //state = MovementState.running;
+        state = MovementState.running;
         sprite.flipX = true;
     }
 
@@ -151,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
     public void PointerUpLeft()
     {
         moveLeft = false;
-        //state = MovementState.idle;
+        state = MovementState.idle;
     }
 
     // repeat the above two steps with the right button
@@ -160,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
-        //state = MovementState.running;
+        state = MovementState.running;
         sprite.flipX = false;
     }
 
@@ -168,7 +171,7 @@ public class PlayerMovement : MonoBehaviour
     public void PointerUpRight()
     {
         moveRight = false;
-        //state = MovementState.idle;
+        state = MovementState.idle;
     }
 
     private void MovementPlayer()
@@ -177,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
         if (moveLeft)
         {
             dirX = -moveSpeed;
-            //UpdateAnimationState();
+            UpdateAnimationState();
         }
 
         // if I press the right button
@@ -185,14 +188,14 @@ public class PlayerMovement : MonoBehaviour
         else if (moveRight)
         {
             dirX = moveSpeed;
-            //UpdateAnimationState();
+            UpdateAnimationState();
         }
 
         // if I don't press any button
         else
         {
             dirX = 0f;
-            //UpdateAnimationState();
+            UpdateAnimationState();
         }
     }
 
