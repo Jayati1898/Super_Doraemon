@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Trap
+  - item collectable
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -38,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back Background
+    uniqueID: 258865887
+    locked: 0
   - name: Background
     uniqueID: 3713799045
     locked: 0
@@ -55,4 +61,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3375331881
+    locked: 0
+  - name: Front
+    uniqueID: 3797496493
     locked: 0
