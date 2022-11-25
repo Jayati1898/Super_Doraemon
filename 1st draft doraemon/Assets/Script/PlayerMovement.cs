@@ -206,7 +206,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (IsGrounded())
         {
-            rb.velocity = Vector2.up * jumpForce;
+            //rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
 
