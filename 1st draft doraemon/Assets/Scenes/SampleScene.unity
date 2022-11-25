@@ -672,7 +672,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -3770,7 +3770,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -4732,6 +4732,7 @@ GameObject:
   - component: {fileID: 513377251}
   - component: {fileID: 513377253}
   - component: {fileID: 513377252}
+  - component: {fileID: 513377254}
   m_Layer: 0
   m_Name: Fox (2)
   m_TagString: Enemy
@@ -4832,6 +4833,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &513377254
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513377250}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,7 +6521,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -6879,7 +6901,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -8543,7 +8565,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -8857,7 +8879,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -11227,6 +11249,7 @@ GameObject:
   - component: {fileID: 1162623386}
   - component: {fileID: 1162623385}
   - component: {fileID: 1162623388}
+  - component: {fileID: 1162623389}
   m_Layer: 0
   m_Name: Squirrel
   m_TagString: Enemy
@@ -11303,7 +11326,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 513255228, guid: be7c67f6ae0b447d0a217e6bf31fbd9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -11343,6 +11366,27 @@ MonoBehaviour:
   - {fileID: 1080308047}
   - {fileID: 2014387155}
   speed: 4
+--- !u!50 &1162623389
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162623384}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1167135559
 GameObject:
   m_ObjectHideFlags: 0
@@ -11608,7 +11652,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -12024,6 +12068,7 @@ GameObject:
   - component: {fileID: 1275206644}
   - component: {fileID: 1275206643}
   - component: {fileID: 1275206646}
+  - component: {fileID: 1275206647}
   m_Layer: 0
   m_Name: Moving Fox
   m_TagString: Enemy
@@ -12100,7 +12145,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26e8b8e3d984e47bcbe324641469675c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -12140,6 +12185,27 @@ MonoBehaviour:
   - {fileID: 542467938}
   - {fileID: 975247629}
   speed: 4
+--- !u!50 &1275206647
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275206642}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1276780751
 GameObject:
   m_ObjectHideFlags: 0
@@ -13873,7 +13939,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -15180,7 +15246,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -16654,7 +16720,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -975099601, guid: 35a6c75318938445a9ea08695fcb2cfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -17315,6 +17381,7 @@ GameObject:
   - component: {fileID: 2024280816}
   - component: {fileID: 2024280818}
   - component: {fileID: 2024280817}
+  - component: {fileID: 2024280819}
   m_Layer: 0
   m_Name: Fox (3)
   m_TagString: Enemy
@@ -17415,6 +17482,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2024280819
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024280815}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2030165208
 GameObject:
   m_ObjectHideFlags: 0
