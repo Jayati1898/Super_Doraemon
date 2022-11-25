@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     //variable for mobile control
     private bool moveLeft; // define boolean variable for moving left
     private bool moveRight; // define boolean variable for moving right
-
+    private bool Jump; // define boolean variable for Jump
 
 
 
@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if ((Input.GetButtonDown("Jump") && IsGrounded()) || Jump)
         {
             //jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -153,6 +153,10 @@ public class PlayerMovement : MonoBehaviour
         sprite.flipX = true;
     }
 
+
+
+
+
     // I am not pressing the left button
     public void PointerUpLeft()
     {
@@ -160,8 +164,11 @@ public class PlayerMovement : MonoBehaviour
         state = MovementState.idle;
     }
 
-    // repeat the above two steps with the right button
 
+
+
+
+    // repeat the above two steps with the right button
     // I am pressing the right button
     public void PointerDownRight()
     {
@@ -170,12 +177,47 @@ public class PlayerMovement : MonoBehaviour
         sprite.flipX = false;
     }
 
+
+
+
+
     // I am not pressing the right button
     public void PointerUpRight()
     {
         moveRight = false;
         state = MovementState.idle;
     }
+
+
+
+
+
+    // I am pressing the left button
+    public void PointerDownJump()
+    {
+        if (IsGrounded())
+        {
+            //rb.velocity = Vector2.up * jumpForce;
+            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            Jump = true;
+            state = MovementState.jumping;
+        }
+    }
+
+
+
+
+
+    // I am not pressing the left button
+    public void PointerUpJump()
+    {
+        Jump = false;
+        state = MovementState.idle;
+    }
+
+
+
+
 
     private void MovementPlayer()
     {
@@ -202,13 +244,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void jumpButton()
-    {
-        if (IsGrounded())
-        {
+
+
+
+
+
+    //public void jumpButton()
+    //{
+        //if (IsGrounded())
+        //{
             //rb.velocity = Vector2.up * jumpForce;
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-    }
+            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        //}
+    //}
 
 }
