@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         {
             dirX = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-            //UpdateAnimationState();
+            UpdateAnimationState();
         }
         else
         {
@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
                 dirX = -moveSpeed;
                 rb.velocity = new Vector2(dirX, rb.velocity.y);
                 //UpdateAnimationState();
+                MovementPlayer();
             }
 
             // if I press the right button
@@ -71,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
                 dirX = moveSpeed;
                 rb.velocity = new Vector2(dirX, rb.velocity.y);
                 //UpdateAnimationState();
+                MovementPlayer();
             }
 
             // if I don't press any button
@@ -79,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
                 dirX = 0f;
                 rb.velocity = new Vector2(dirX, rb.velocity.y);
                 //UpdateAnimationState();
+                MovementPlayer();
             }
         }
 
@@ -90,9 +93,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        MovementPlayer();
+        //MovementPlayer();
 
-        UpdateAnimationState();
+        //UpdateAnimationState();
     }
 
     private void UpdateAnimationState()
