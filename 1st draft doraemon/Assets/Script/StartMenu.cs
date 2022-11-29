@@ -14,5 +14,10 @@ public class StartMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Map()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
 
