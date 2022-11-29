@@ -6,50 +6,56 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject _pauseMenu;
-    [SerializeField] private GameObject _uiButton_left;
-    [SerializeField] private GameObject _uiButton_right;
-    [SerializeField] private GameObject _uiButton_jump;
-    [SerializeField] private GameObject _pausebutton;
+    [SerializeField] private GameObject _settingMenu;
+    [SerializeField] private GameObject _uiButton_menu;
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-    }
+    [SerializeField] private GameObject _uiButton_play;
+    [SerializeField] private GameObject _uiButton_map;
+    [SerializeField] private GameObject _uiButton_setting;
+    [SerializeField] private GameObject _uiButton_quit;
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 
-    public void Menu()
-    {
-        SceneManager.LoadScene(0);
-        ResumeButton();
-    }
 
-    public void PauseButton()
+
+    //public void StartGame()
+    //{
+    //SceneManager.LoadScene(1);
+    //}
+
+    //public void QuitGame()
+    //{
+    //Application.Quit();
+    //}
+
+    //public void Menu()
+    //{
+    //SceneManager.LoadScene(0);
+    //ResumeButton();
+    //}
+
+    public void SettingButton()
     {
         Time.timeScale = 0f;
-        _pauseMenu.SetActive(true);
-        _pausebutton.SetActive(false);
+        //display settingMenu
+        _settingMenu.SetActive(true);
 
-        //hide mobile controller button
-        _uiButton_left.SetActive(false);
-        _uiButton_right.SetActive(false);
-        _uiButton_jump.SetActive(false);
+        //hide menu button
+        _uiButton_setting.SetActive(false);
+        _uiButton_play.SetActive(false);
+        _uiButton_map.SetActive(false);
+        _uiButton_quit.SetActive(false);
     }
 
-    public void ResumeButton()
+    public void GoBackToMenuButton()
     {
         Time.timeScale = 1.0f;
-        _pauseMenu.SetActive(false);
-        _pausebutton.SetActive(true);
+        _settingMenu.SetActive(false);
 
-        //show mobile controller button
-        _uiButton_left.SetActive(true);
-        _uiButton_right.SetActive(true);
-        _uiButton_jump.SetActive(true);
+        //show menu button
+        _uiButton_setting.SetActive(true);
+        _uiButton_play.SetActive(true);
+        _uiButton_map.SetActive(true);
+        _uiButton_quit.SetActive(true);
     }
     //void Start()
     //{

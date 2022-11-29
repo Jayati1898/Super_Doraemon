@@ -12,7 +12,7 @@ public class ItemCollector : MonoBehaviour
     //public GameObject pineapple_bun_OBJ;
     public TextMeshProUGUI pineapple_bun_text;
 
-    //[SerializeField] private AudioSource collectionSoundEffect;
+    [SerializeField] private AudioSource collectionSoundEffect;
 
     //void Start()
     //{
@@ -23,7 +23,7 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("item collectable"))
         {
-            //collectionSoundEffect.Play();
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             pineapple_bun++;
             pineapple_bun_text.text = "pineapple bun: " + pineapple_bun;
