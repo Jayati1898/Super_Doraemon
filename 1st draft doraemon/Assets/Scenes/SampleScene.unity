@@ -11642,7 +11642,8 @@ MonoBehaviour:
   _uiButton_left: {fileID: 1325852765}
   _uiButton_right: {fileID: 361814962}
   _uiButton_jump: {fileID: 732001604}
-  _pausebutton: {fileID: 2076708451}
+  _uiButton_resume: {fileID: 1678936032}
+  _uiButton_pause: {fileID: 2076708451}
 --- !u!1 &1174547156
 GameObject:
   m_ObjectHideFlags: 0

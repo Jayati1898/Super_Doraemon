@@ -6,56 +6,58 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject _settingMenu;
-    [SerializeField] private GameObject _uiButton_menu;
+    [SerializeField] private GameObject _pauseMenu;
 
-    [SerializeField] private GameObject _uiButton_play;
-    [SerializeField] private GameObject _uiButton_map;
-    [SerializeField] private GameObject _uiButton_setting;
-    [SerializeField] private GameObject _uiButton_quit;
-
-
+    [SerializeField] private GameObject _uiButton_left;
+    [SerializeField] private GameObject _uiButton_right;
+    [SerializeField] private GameObject _uiButton_jump;
+    [SerializeField] private GameObject _uiButton_resume;
+    [SerializeField] private GameObject _uiButton_pause;
 
 
-    //public void StartGame()
-    //{
-    //SceneManager.LoadScene(1);
-    //}
 
-    //public void QuitGame()
-    //{
-    //Application.Quit();
-    //}
 
-    //public void Menu()
-    //{
-    //SceneManager.LoadScene(0);
-    //ResumeButton();
-    //}
+    public void StartGame()
+    {
+    SceneManager.LoadScene(1);
+    }
 
-    public void SettingButton()
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+        ResumeButton();
+    }
+
+    public void PauseButton()
     {
         Time.timeScale = 0f;
         //display settingMenu
-        _settingMenu.SetActive(true);
+        _pauseMenu.SetActive(true);
+        _uiButton_resume.SetActive(true);
 
         //hide menu button
-        _uiButton_setting.SetActive(false);
-        _uiButton_play.SetActive(false);
-        _uiButton_map.SetActive(false);
-        _uiButton_quit.SetActive(false);
+        _uiButton_right.SetActive(false);
+        _uiButton_left.SetActive(false);
+        _uiButton_jump.SetActive(false);
+        _uiButton_pause.SetActive(false);
     }
 
-    public void GoBackToMenuButton()
+    public void ResumeButton()
     {
         Time.timeScale = 1.0f;
-        _settingMenu.SetActive(false);
+        _pauseMenu.SetActive(false);
+        _uiButton_resume.SetActive(false);
 
         //show menu button
-        _uiButton_setting.SetActive(true);
-        _uiButton_play.SetActive(true);
-        _uiButton_map.SetActive(true);
-        _uiButton_quit.SetActive(true);
+        _uiButton_right.SetActive(true);
+        _uiButton_left.SetActive(true);
+        _uiButton_jump.SetActive(true);
+        _uiButton_pause.SetActive(true);
     }
     //void Start()
     //{

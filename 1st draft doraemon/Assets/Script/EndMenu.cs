@@ -10,9 +10,9 @@ public class EndMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void Menu()
+    public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         //ResumeButton();
     }
 }
