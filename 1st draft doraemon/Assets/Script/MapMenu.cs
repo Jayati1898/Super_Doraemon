@@ -9,4 +9,9 @@ public class MapMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void LevelTwo()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
