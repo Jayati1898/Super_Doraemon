@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
   follow_speed: 5
-  distanceBetween: 10
+  distanceBetween: 7
 --- !u!50 &103880464
 Rigidbody2D:
   serializedVersion: 4
@@ -4700,7 +4700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
   follow_speed: 5
-  distanceBetween: 10
+  distanceBetween: 7
 --- !u!50 &260299397
 Rigidbody2D:
   serializedVersion: 4
@@ -8806,7 +8806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
   follow_speed: 5
-  distanceBetween: 10
+  distanceBetween: 7
 --- !u!50 &653554145
 Rigidbody2D:
   serializedVersion: 4
@@ -11669,7 +11669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
   follow_speed: 5
-  distanceBetween: 10
+  distanceBetween: 7
 --- !u!50 &969234507
 Rigidbody2D:
   serializedVersion: 4
@@ -18952,7 +18952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
   follow_speed: 5
-  distanceBetween: 10
+  distanceBetween: 7
 --- !u!50 &1525612984
 Rigidbody2D:
   serializedVersion: 4
