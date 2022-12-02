@@ -19,10 +19,13 @@ public class PlayerLifeAndItemCollect : MonoBehaviour
 
     [SerializeField] private AudioSource collectionSoundEffect;
 
+    Vector2 startPosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();        
+        //anim = GetComponent<Animator>();
+        startPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -33,13 +36,13 @@ public class PlayerLifeAndItemCollect : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
+        if ((collision.gameObject.CompareTag("Trap")) || (collision.gameObject.CompareTag("Enemy")))
         {
             if(player_life > 0)
             {
                 player_life--;
-                player_life_text.text = "player life: " + player_life;
-                Die_restart();
+                player_life_text.text = "Player HP: " + player_life;
+                transform.position = startPosition;
             }
             else
             {
@@ -71,7 +74,7 @@ public class PlayerLifeAndItemCollect : MonoBehaviour
 
     private void Lost()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

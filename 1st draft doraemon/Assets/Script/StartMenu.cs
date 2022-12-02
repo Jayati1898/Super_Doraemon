@@ -17,7 +17,7 @@ public class StartMenu : MonoBehaviour
 
     public void Map()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
 

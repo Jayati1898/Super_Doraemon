@@ -2137,6 +2137,7 @@ GameObject:
   - component: {fileID: 185566210}
   - component: {fileID: 185566212}
   - component: {fileID: 185566213}
+  - component: {fileID: 185566215}
   - component: {fileID: 185566214}
   m_Layer: 0
   m_Name: Player
@@ -2454,12 +2455,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 185566200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a56be889767320488f2b7cfe5f5dda0, type: 3}
+  m_Script: {fileID: 11500000, guid: b40bf3c6e34d275428e63727e3b6e4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pineapple_bun_text: {fileID: 925226993}
-  player_life_text: {fileID: 1652366738}
   collectionSoundEffect: {fileID: 185566212}
+--- !u!114 &185566215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185566200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a52325d308b8040b45e72fcef8499d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &215269987
 GameObject:
   m_ObjectHideFlags: 0
