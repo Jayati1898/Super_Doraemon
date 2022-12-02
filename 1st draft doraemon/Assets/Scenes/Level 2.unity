@@ -1592,8 +1592,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 2
-  distanceBetween: 7
+  follow_speed: 5
+  distanceBetween: 10
 --- !u!50 &103880464
 Rigidbody2D:
   serializedVersion: 4
@@ -4699,8 +4699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 2
-  distanceBetween: 7
+  follow_speed: 5
+  distanceBetween: 10
 --- !u!50 &260299397
 Rigidbody2D:
   serializedVersion: 4
@@ -8805,8 +8805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 2
-  distanceBetween: 7
+  follow_speed: 5
+  distanceBetween: 10
 --- !u!50 &653554145
 Rigidbody2D:
   serializedVersion: 4
@@ -11668,8 +11668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 2
-  distanceBetween: 7
+  follow_speed: 5
+  distanceBetween: 10
 --- !u!50 &969234507
 Rigidbody2D:
   serializedVersion: 4
@@ -19063,8 +19063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 2
-  distanceBetween: 7
+  follow_speed: 5
+  distanceBetween: 10
 --- !u!50 &1525612984
 Rigidbody2D:
   serializedVersion: 4
@@ -21627,7 +21627,7 @@ GameObject:
   - component: {fileID: 1855044604}
   m_Layer: 0
   m_Name: Enemy follow player cannot be killed
-  m_TagString: Trap
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
