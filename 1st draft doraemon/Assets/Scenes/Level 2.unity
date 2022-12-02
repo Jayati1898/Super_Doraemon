@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &103880464
 Rigidbody2D:
@@ -4699,7 +4699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &260299397
 Rigidbody2D:
@@ -8805,7 +8805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &653554145
 Rigidbody2D:
@@ -11668,7 +11668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &969234507
 Rigidbody2D:
@@ -19063,7 +19063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &1525612984
 Rigidbody2D:
@@ -21645,7 +21645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 7
   distanceBetween: 10
 --- !u!50 &1855044605
 Rigidbody2D:
