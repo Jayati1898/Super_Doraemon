@@ -779,6 +779,8 @@ GameObject:
   - component: {fileID: 33726569}
   - component: {fileID: 33726568}
   - component: {fileID: 33726571}
+  - component: {fileID: 33726573}
+  - component: {fileID: 33726572}
   m_Layer: 6
   m_Name: vertical moving platform1
   m_TagString: Untagged
@@ -814,7 +816,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12807083, y: 0}
+  m_Offset: {x: 0.12807083, y: -0.15063}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -825,7 +827,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1692657, y: 1.23}
+  m_Size: {x: 3.1692657, y: 0.78461266}
   m_EdgeRadius: 0
 --- !u!50 &33726569
 Rigidbody2D:
@@ -916,6 +918,44 @@ MonoBehaviour:
   - {fileID: 1578295424}
   - {fileID: 1999136603}
   speed: 2
+--- !u!61 &33726572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33726566}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09809649, y: 0.43352938}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.94, y: 1.24}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.136193, y: 0.27437496}
+  m_EdgeRadius: 0
+--- !u!114 &33726573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33726566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae0f2aec27654409c72c050d404117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &36121091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,7 +1632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &103880464
 Rigidbody2D:
@@ -4699,7 +4739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &260299397
 Rigidbody2D:
@@ -8805,7 +8845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &653554145
 Rigidbody2D:
@@ -11668,7 +11708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &969234507
 Rigidbody2D:
@@ -17035,6 +17075,8 @@ GameObject:
   - component: {fileID: 1383904941}
   - component: {fileID: 1383904940}
   - component: {fileID: 1383904943}
+  - component: {fileID: 1383904945}
+  - component: {fileID: 1383904944}
   m_Layer: 6
   m_Name: horizontal moving platform5
   m_TagString: Untagged
@@ -17067,10 +17109,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12807083, y: 0}
+  m_Offset: {x: 0.10685158, y: -0.13537884}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17081,7 +17123,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1692657, y: 1.23}
+  m_Size: {x: 3.1268272, y: 0.96766615}
   m_EdgeRadius: 0
 --- !u!50 &1383904941
 Rigidbody2D:
@@ -17172,6 +17214,44 @@ MonoBehaviour:
   - {fileID: 394112653}
   - {fileID: 943864356}
   speed: 2
+--- !u!61 &1383904944
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383904938}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.084873796, y: 0.57710886}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.94, y: 1.24}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1097476, y: 0.36846542}
+  m_EdgeRadius: 0
+--- !u!114 &1383904945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383904938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae0f2aec27654409c72c050d404117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1395093631
 GameObject:
   m_ObjectHideFlags: 0
@@ -18671,6 +18751,8 @@ GameObject:
   - component: {fileID: 1485687987}
   - component: {fileID: 1485687986}
   - component: {fileID: 1485687989}
+  - component: {fileID: 1485687991}
+  - component: {fileID: 1485687990}
   m_Layer: 6
   m_Name: vertical moving platform 4
   m_TagString: Untagged
@@ -18706,7 +18788,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12807083, y: 0}
+  m_Offset: {x: 0.014127731, y: -0.10032678}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18717,7 +18799,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1692657, y: 1.23}
+  m_Size: {x: 2.9413795, y: 0.798265}
   m_EdgeRadius: 0
 --- !u!50 &1485687987
 Rigidbody2D:
@@ -18808,6 +18890,44 @@ MonoBehaviour:
   - {fileID: 1357253994}
   - {fileID: 1014611690}
   speed: 2
+--- !u!61 &1485687990
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485687984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.57248616}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.94, y: 1.24}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.94, y: 0.3712535}
+  m_EdgeRadius: 0
+--- !u!114 &1485687991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485687984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ae0f2aec27654409c72c050d404117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1490932509
 GameObject:
   m_ObjectHideFlags: 0
@@ -19063,7 +19183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &1525612984
 Rigidbody2D:
@@ -21645,7 +21765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 7
+  follow_speed: 5
   distanceBetween: 10
 --- !u!50 &1855044605
 Rigidbody2D:
