@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 2
   distanceBetween: 10
 --- !u!50 &103880464
 Rigidbody2D:
@@ -4739,7 +4739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 2
   distanceBetween: 10
 --- !u!50 &260299397
 Rigidbody2D:
@@ -5988,7 +5988,7 @@ RectTransform:
   m_GameObject: {fileID: 361814962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.327, y: 1.327, z: 1.327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167135563}
@@ -5996,7 +5996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -267.8376, y: -146.17}
+  m_AnchoredPosition: {x: -150.3, y: -113.58}
   m_SizeDelta: {x: 56.1446, y: 56.145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361814964
@@ -8845,7 +8845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 2
   distanceBetween: 10
 --- !u!50 &653554145
 Rigidbody2D:
@@ -9234,7 +9234,7 @@ RectTransform:
   m_GameObject: {fileID: 732001604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2121, y: 1.2121, z: 1.2121}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167135563}
@@ -9242,7 +9242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 342, y: -145}
+  m_AnchoredPosition: {x: 268.7, y: -119.1}
   m_SizeDelta: {x: 56.7317, y: 56.7318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732001606
@@ -11708,7 +11708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 2
   distanceBetween: 10
 --- !u!50 &969234507
 Rigidbody2D:
@@ -16384,7 +16384,7 @@ RectTransform:
   m_GameObject: {fileID: 1325852765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.327, y: 1.327, z: 1.327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167135563}
@@ -16392,7 +16392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.2017, y: -146.10622}
+  m_AnchoredPosition: {x: -267.9, y: -113.5}
   m_SizeDelta: {x: 56.033, y: 56.0326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1325852767
@@ -19183,7 +19183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 185566200}
-  follow_speed: 5
+  follow_speed: 2
   distanceBetween: 10
 --- !u!50 &1525612984
 Rigidbody2D:
