@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndMenu : MonoBehaviour
+public class LoseMenu : MonoBehaviour
 {
     public void Quit()
     {
         Application.Quit();
+        Lives.CurLives = 3;
     }
 
-    public void Restart()
+    public void Menu()
     {
-        Lives.CurLives = 3;
-        SceneManager.LoadScene(1);
-        //ResumeButton();
+        SceneManager.LoadScene(0);
+        //Lives.CurLives = 3;
     }
+
 }

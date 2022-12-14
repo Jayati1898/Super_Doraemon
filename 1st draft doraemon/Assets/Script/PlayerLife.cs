@@ -32,7 +32,7 @@ public class PlayerLife : MonoBehaviour
             else
             {
                 Die_lose();
-                Lives.CurLives = 3;
+                //Lives.CurLives = 3;
             }
         }
     }

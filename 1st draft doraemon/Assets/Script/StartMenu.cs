@@ -7,6 +7,7 @@ public class StartMenu : MonoBehaviour
 {
     public void StartGame()
     {
+        Lives.CurLives = 3;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
