@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public TextMeshProUGUI curren_lives_text;
     //private Animator anim;
 
     //[SerializeField] private AudioSource deathSoundEffect;
@@ -14,17 +16,28 @@ public class PlayerLife : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
+        curren_lives_text.text = "current lives: " + Lives.CurLives;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
         {
-            Die();
+            if (Lives.CurLives > 0)
+            {
+                Lives.CurLives--;
+                Die_restart();
+                //curren_lives_text.text = "current lives: " + Lives.CurLives;
+            }
+            else
+            {
+                Die_lose();
+                Lives.CurLives = 3;
+            }
         }
     }
 
-    private void Die()
+    private void Die_restart()
     {
         //deathSoundEffect.Play();
         rb.bodyType = RigidbodyType2D.Static;
@@ -32,8 +45,21 @@ public class PlayerLife : MonoBehaviour
         RestartLevel();
     }
 
+    private void Die_lose()
+    {
+        //deathSoundEffect.Play();
+        rb.bodyType = RigidbodyType2D.Static;
+        //anim.SetTrigger("death");
+        LoseLevel();
+    }
+
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void LoseLevel()
+    {
+        SceneManager.LoadScene(5);
     }
 }

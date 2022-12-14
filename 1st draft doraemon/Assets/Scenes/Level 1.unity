@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 44934909}
   - component: {fileID: 44934908}
   m_Layer: 0
-  m_Name: Moving Platform (4)
+  m_Name: Moving Animal (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2338,7 +2338,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07953322, y: -1.0158204}
+  m_Offset: {x: 0.14953452, y: -1.023746}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2349,7 +2349,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.287115, y: 0.2861846}
+  m_Size: {x: 0.98439276, y: 0.2703334}
   m_EdgeRadius: 0
 --- !u!114 &185566211
 MonoBehaviour:
@@ -2363,6 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50717c42665b10e45b406ff1067f5053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curren_lives_text: {fileID: 1652366738}
 --- !u!82 &185566212
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2499,6 +2500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a52325d308b8040b45e72fcef8499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curren_lives_text: {fileID: 1652366738}
 --- !u!1 &215269987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,7 +3812,7 @@ GameObject:
   - component: {fileID: 365686463}
   - component: {fileID: 365686462}
   m_Layer: 0
-  m_Name: Moving Platform (5)
+  m_Name: Moving Animal (5)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6935,7 +6937,7 @@ GameObject:
   - component: {fileID: 679453872}
   - component: {fileID: 679453871}
   m_Layer: 0
-  m_Name: Moving Platform (2)
+  m_Name: Moving Animal (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7315,7 +7317,7 @@ GameObject:
   - component: {fileID: 727119991}
   - component: {fileID: 727119990}
   m_Layer: 0
-  m_Name: Moving Platform (6)
+  m_Name: Moving Animal (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8934,7 +8936,7 @@ GameObject:
   - component: {fileID: 927692860}
   - component: {fileID: 927692859}
   m_Layer: 0
-  m_Name: Moving Platform (1)
+  m_Name: Moving Animal (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9248,7 +9250,7 @@ GameObject:
   - component: {fileID: 971704068}
   - component: {fileID: 971704067}
   m_Layer: 0
-  m_Name: Moving Platform
+  m_Name: Moving Animal
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12017,7 +12019,7 @@ GameObject:
   - component: {fileID: 1174547159}
   - component: {fileID: 1174547158}
   m_Layer: 0
-  m_Name: Moving Platform (3)
+  m_Name: Moving Animal (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14616,7 +14618,7 @@ GameObject:
   - component: {fileID: 1527006501}
   - component: {fileID: 1527006500}
   m_Layer: 0
-  m_Name: Moving Platform (8)
+  m_Name: Moving Animal (8)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15393,7 +15395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'player life: 3'
+  m_text: 'current lives: 3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15927,7 +15929,7 @@ GameObject:
   - component: {fileID: 1751007931}
   - component: {fileID: 1751007930}
   m_Layer: 0
-  m_Name: Moving Platform (10)
+  m_Name: Moving Animal (10)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17267,7 +17269,7 @@ GameObject:
   - component: {fileID: 1970864473}
   - component: {fileID: 1970864472}
   m_Layer: 0
-  m_Name: Moving Platform (9)
+  m_Name: Moving Animal (9)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
