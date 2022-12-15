@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class KillEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public GameObject Collectible;
+    //private float m_Thrust = 100f;
     //public TextMeshProUGUI curren_lives_text;
     //private Animator anim;
 
@@ -21,9 +24,13 @@ public class KillEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if ((collision.gameObject.CompareTag("Enemy")) || (collision.gameObject.CompareTag("passport")))
         {
+
             Destroy(collision.gameObject);
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
+
+
         }
         else if (collision.gameObject.CompareTag("Trap"))
         {

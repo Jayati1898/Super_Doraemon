@@ -1610,10 +1610,10 @@ GameObject:
   - component: {fileID: 103880467}
   - component: {fileID: 103880466}
   - component: {fileID: 103880465}
-  - component: {fileID: 103880464}
   - component: {fileID: 103880463}
+  - component: {fileID: 103880468}
   m_Layer: 0
-  m_Name: Enemy follow player cannot be killed (4)
+  m_Name: Enemy follow player 5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1634,27 +1634,7 @@ MonoBehaviour:
   player: {fileID: 185566200}
   follow_speed: 4
   distanceBetween: 10
---- !u!50 &103880464
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103880462}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &103880465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1748,6 +1728,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &103880468
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103880462}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &104976085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50717c42665b10e45b406ff1067f5053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Collectible: {fileID: 0}
 --- !u!82 &185566212
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3564,9 +3566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a56be889767320488f2b7cfe5f5dda0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pineapple_bun_text: {fileID: 925226993}
-  player_life_text: {fileID: 0}
-  collectionSoundEffect: {fileID: 185566212}
 --- !u!114 &185566215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4744,10 +4743,10 @@ GameObject:
   - component: {fileID: 260299400}
   - component: {fileID: 260299399}
   - component: {fileID: 260299398}
-  - component: {fileID: 260299397}
   - component: {fileID: 260299396}
+  - component: {fileID: 260299401}
   m_Layer: 0
-  m_Name: Enemy follow player cannot be killed (1)
+  m_Name: Enemy follow player 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4768,27 +4767,7 @@ MonoBehaviour:
   player: {fileID: 185566200}
   follow_speed: 4
   distanceBetween: 10
---- !u!50 &260299397
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260299395}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &260299398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4882,6 +4861,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &260299401
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260299395}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &275795650
 GameObject:
   m_ObjectHideFlags: 0
@@ -8994,10 +8994,10 @@ GameObject:
   - component: {fileID: 653554148}
   - component: {fileID: 653554147}
   - component: {fileID: 653554146}
-  - component: {fileID: 653554145}
   - component: {fileID: 653554144}
+  - component: {fileID: 653554149}
   m_Layer: 0
-  m_Name: Enemy follow player cannot be killed (3)
+  m_Name: Enemy follow player 4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9018,27 +9018,7 @@ MonoBehaviour:
   player: {fileID: 185566200}
   follow_speed: 4
   distanceBetween: 10
---- !u!50 &653554145
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653554143}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &653554146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9132,6 +9112,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &653554149
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653554143}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &654422850
 GameObject:
   m_ObjectHideFlags: 0
@@ -11926,10 +11927,10 @@ GameObject:
   - component: {fileID: 969234510}
   - component: {fileID: 969234509}
   - component: {fileID: 969234508}
-  - component: {fileID: 969234507}
   - component: {fileID: 969234506}
+  - component: {fileID: 969234511}
   m_Layer: 0
-  m_Name: Enemy follow player cannot be killed (5)
+  m_Name: Enemy follow player 6
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11950,27 +11951,7 @@ MonoBehaviour:
   player: {fileID: 185566200}
   follow_speed: 4
   distanceBetween: 10
---- !u!50 &969234507
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969234505}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &969234508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12064,6 +12045,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &969234511
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969234505}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &973945127
 GameObject:
   m_ObjectHideFlags: 0
@@ -16811,6 +16813,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1330415200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7225335271403020621, guid: 10a7a9eab7662474f9cef0624359d016, type: 3}
+  m_PrefabInstance: {fileID: 7225335270772726454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1330415206
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330415200}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1340856031
 GameObject:
   m_ObjectHideFlags: 0
@@ -19402,10 +19430,10 @@ GameObject:
   - component: {fileID: 1525612987}
   - component: {fileID: 1525612986}
   - component: {fileID: 1525612985}
-  - component: {fileID: 1525612984}
   - component: {fileID: 1525612983}
+  - component: {fileID: 1525612988}
   m_Layer: 0
-  m_Name: Enemy follow player cannot be killed (2)
+  m_Name: Enemy follow player 3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19426,27 +19454,7 @@ MonoBehaviour:
   player: {fileID: 185566200}
   follow_speed: 4
   distanceBetween: 10
---- !u!50 &1525612984
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525612982}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &1525612985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19540,6 +19548,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1525612988
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525612982}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1563843287
 GameObject:
   m_ObjectHideFlags: 0
@@ -20018,9 +20047,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1607363240}
   - component: {fileID: 1607363239}
+  - component: {fileID: 1607363241}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20092,6 +20122,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1607363241
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607363238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.32, y: 3.16}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.32, y: 3.16}
+  m_EdgeRadius: 0
 --- !u!1 &1615330980
 GameObject:
   m_ObjectHideFlags: 0
@@ -25408,7 +25464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7225335271403020621, guid: 10a7a9eab7662474f9cef0624359d016, type: 3}
       propertyPath: m_Name
-      value: Enemy follow player cannot be killed
+      value: Enemy follow player
       objectReference: {fileID: 0}
     - target: {fileID: 7225335271403022006, guid: 10a7a9eab7662474f9cef0624359d016, type: 3}
       propertyPath: m_RootOrder
@@ -25454,5 +25510,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7225335271403020619, guid: 10a7a9eab7662474f9cef0624359d016, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10a7a9eab7662474f9cef0624359d016, type: 3}

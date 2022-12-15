@@ -8,6 +8,8 @@ TagManager:
   - item collectable
   - Enemy
   - Heart
+  - passport
+  - NPC
   layers:
   - Default
   - TransparentFX
