@@ -27,6 +27,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             pineapple_bun++;
             pineapple_bun_text.text = "pineapple bun: " + pineapple_bun;
+            Score.CurScore = Score.CurScore + pineapple_bun;
         }
     }
 }
