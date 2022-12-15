@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class KillEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public TextMeshProUGUI curren_lives_text;
+    //public TextMeshProUGUI curren_lives_text;
     //private Animator anim;
 
     //[SerializeField] private AudioSource deathSoundEffect;
@@ -16,7 +16,7 @@ public class KillEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
-        curren_lives_text.text = "current lives: " + Lives.CurLives;
+        //curren_lives_text.text = "current lives: " + Lives.CurLives;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +27,7 @@ public class KillEnemy : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Trap"))
         {
-            if (Lives.CurLives > 0)
+            if (Lives.CurLives > 1)
             {
                 Lives.CurLives--;
                 Die_restart();
