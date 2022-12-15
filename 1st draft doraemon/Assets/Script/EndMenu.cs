@@ -19,6 +19,7 @@ public class EndMenu : MonoBehaviour
     public void Restart()
     {
         Lives.CurLives = 3;
+        Tutorial_on_off.CurTutorial = 0;
         SceneManager.LoadScene(1);
         //ResumeButton();
     }

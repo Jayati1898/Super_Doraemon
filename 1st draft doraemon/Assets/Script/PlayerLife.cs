@@ -42,6 +42,8 @@ public class PlayerLife : MonoBehaviour
         //deathSoundEffect.Play();
         rb.bodyType = RigidbodyType2D.Static;
         //anim.SetTrigger("death");
+        //turn off tutorial 
+        Tutorial_on_off.CurTutorial = 0;
         RestartLevel();
     }
 

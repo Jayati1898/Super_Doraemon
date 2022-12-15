@@ -9,6 +9,7 @@ public class StartMenu : MonoBehaviour
     {
         Lives.CurLives = 3;
         Score.CurScore = 0;
+        Tutorial_on_off.CurTutorial = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

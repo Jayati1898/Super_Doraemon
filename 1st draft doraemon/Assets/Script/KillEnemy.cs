@@ -37,6 +37,7 @@ public class KillEnemy : MonoBehaviour
             if (Lives.CurLives > 1)
             {
                 Lives.CurLives--;
+                Tutorial_on_off.CurTutorial = 0;
                 Die_restart();
                 //curren_lives_text.text = "current lives: " + Lives.CurLives;
             }
