@@ -12,7 +12,7 @@ public class HeartManager : MonoBehaviour
     [SerializeField] Image One_Lives;
 
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         if (Lives.CurLives == 3)
         {

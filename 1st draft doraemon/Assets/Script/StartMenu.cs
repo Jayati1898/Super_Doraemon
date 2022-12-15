@@ -8,6 +8,7 @@ public class StartMenu : MonoBehaviour
     public void StartGame()
     {
         Lives.CurLives = 3;
+        Score.CurScore = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -18,7 +19,7 @@ public class StartMenu : MonoBehaviour
 
     public void Map()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 }
 

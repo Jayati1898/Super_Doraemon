@@ -14,4 +14,9 @@ public class MapMenu : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    public void LevelThree()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

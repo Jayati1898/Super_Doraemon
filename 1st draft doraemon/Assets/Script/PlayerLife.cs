@@ -60,6 +60,6 @@ public class PlayerLife : MonoBehaviour
 
     private void LoseLevel()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 }

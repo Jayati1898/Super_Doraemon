@@ -1797,9 +1797,10 @@ GameObject:
   m_Component:
   - component: {fileID: 154263095}
   - component: {fileID: 154263094}
+  - component: {fileID: 154263096}
   m_Layer: 0
   m_Name: Heart
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1871,6 +1872,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &154263096
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154263093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.66, y: 0.58}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.66, y: 0.58}
+  m_EdgeRadius: 0
 --- !u!1 &155328809
 GameObject:
   m_ObjectHideFlags: 0
@@ -12014,6 +12041,7 @@ MonoBehaviour:
   _uiButton_jump: {fileID: 732001604}
   _uiButton_resume: {fileID: 1678936032}
   _uiButton_pause: {fileID: 2076708451}
+  _uiCurrent_live: {fileID: 6524380287501177036}
 --- !u!1 &1174547156
 GameObject:
   m_ObjectHideFlags: 0
@@ -18782,3 +18810,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c429f3257f528c04b891f0bc516a7ddd, type: 3}
+--- !u!1 &6524380287501177036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6524380287894196437, guid: c429f3257f528c04b891f0bc516a7ddd, type: 3}
+  m_PrefabInstance: {fileID: 6524380287501177035}
+  m_PrefabAsset: {fileID: 0}

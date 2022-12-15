@@ -7,6 +7,7 @@ TagManager:
   - Trap
   - item collectable
   - Enemy
+  - Heart
   layers:
   - Default
   - TransparentFX

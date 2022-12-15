@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class Finish : MonoBehaviour
     private AudioSource finishSound;
 
     private bool levelCompleted = false;
+
+    private int sceneID;
 
     private void Start()
     {
@@ -26,6 +29,14 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
-        SceneManager.LoadScene(4);
+        sceneID = SceneManager.GetActiveScene().buildIndex;
+        if (sceneID == 3)
+        {
+            SceneManager.LoadScene(4);
+        }
+        else
+        {
+            SceneManager.LoadScene(5);
+        }
     }
 }

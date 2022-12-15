@@ -64,6 +64,6 @@ public class KillEnemy : MonoBehaviour
 
     private void LoseLevel()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 }

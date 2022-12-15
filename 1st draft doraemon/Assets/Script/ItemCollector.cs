@@ -29,5 +29,14 @@ public class ItemCollector : MonoBehaviour
             pineapple_bun_text.text = "pineapple bun: " + pineapple_bun;
             Score.CurScore = Score.CurScore + pineapple_bun;
         }
+        else if (collision.gameObject.CompareTag("Heart"))
+        {
+            collectionSoundEffect.Play();
+            Destroy(collision.gameObject);
+            if (Lives.CurLives < 3)
+            {
+                Lives.CurLives++;
+            }
+        }
     }
 }

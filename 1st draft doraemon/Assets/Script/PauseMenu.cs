@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject _uiButton_jump;
     [SerializeField] private GameObject _uiButton_resume;
     [SerializeField] private GameObject _uiButton_pause;
-
+    [SerializeField] private GameObject _uiCurrent_live;
 
 
 
@@ -45,6 +45,8 @@ public class PauseMenu : MonoBehaviour
         _uiButton_left.SetActive(false);
         _uiButton_jump.SetActive(false);
         _uiButton_pause.SetActive(false);
+
+        _uiCurrent_live.SetActive(false);
     }
 
     public void ResumeButton()
@@ -58,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         _uiButton_left.SetActive(true);
         _uiButton_jump.SetActive(true);
         _uiButton_pause.SetActive(true);
+        _uiCurrent_live.SetActive(true);
     }
     //void Start()
     //{
