@@ -26,7 +26,7 @@ public class ItemCollector : MonoBehaviour
             collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             pineapple_bun++;
-            pineapple_bun_text.text = "collectable: " + pineapple_bun;
+            pineapple_bun_text.text = "collectible: " + pineapple_bun;
             Score.CurScore = Score.CurScore + pineapple_bun;
         }
         else if (collision.gameObject.CompareTag("Heart"))

@@ -3891,8 +3891,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -267.8376, y: -146.17}
-  m_SizeDelta: {x: 56.1446, y: 56.145}
+  m_AnchoredPosition: {x: -118.23353, y: -135.09229}
+  m_SizeDelta: {x: 81.2411, y: 81.2417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361814964
 MonoBehaviour:
@@ -8090,8 +8090,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 342, y: -145}
-  m_SizeDelta: {x: 56.7317, y: 56.7318}
+  m_AnchoredPosition: {x: 257, y: -134.07}
+  m_SizeDelta: {x: 79.2259, y: 79.226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732001606
 MonoBehaviour:
@@ -8848,6 +8848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e16ff6430a04ce47bbab6ec1c64dcf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  passport: {fileID: 0}
 --- !u!82 &869433468
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9639,7 +9640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -285.15527, y: 124.46574}
+  m_AnchoredPosition: {x: -275, y: 143}
   m_SizeDelta: {x: 181.5526, y: 39.8973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925226993
@@ -9662,7 +9663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PINEAPPLE BUNS: 0'
+  m_text: 'collectible: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14409,8 +14410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.2017, y: -146.10622}
-  m_SizeDelta: {x: 56.033, y: 56.0326}
+  m_AnchoredPosition: {x: -247, y: -135}
+  m_SizeDelta: {x: 81.0796, y: 81.0791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1325852767
 MonoBehaviour:
@@ -17928,7 +17929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1791723854
 RectTransform:
   m_ObjectHideFlags: 0
