@@ -27,7 +27,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             pineapple_bun++;
             pineapple_bun_text.text = "collectible: " + pineapple_bun;
-            Score.CurScore = Score.CurScore + pineapple_bun;
+            Score.CurScore++;
         }
         else if (collision.gameObject.CompareTag("Heart"))
         {

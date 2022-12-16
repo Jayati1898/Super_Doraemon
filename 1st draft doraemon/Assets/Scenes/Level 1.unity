@@ -13113,7 +13113,7 @@ MonoBehaviour:
   _uiButton_right: {fileID: 361814962}
   _uiButton_jump: {fileID: 732001604}
   _uiButton_pause: {fileID: 2076708451}
-  _uiCurrent_live: {fileID: 0}
+  _uiCurrent_live: {fileID: 1719865729}
 --- !u!1 &1174547156
 GameObject:
   m_ObjectHideFlags: 0
@@ -17295,6 +17295,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1719865729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4443407248211510294, guid: c429f3257f528c04b891f0bc516a7ddd, type: 3}
+  m_PrefabInstance: {fileID: 1734079508}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1734079508
 PrefabInstance:
   m_ObjectHideFlags: 0

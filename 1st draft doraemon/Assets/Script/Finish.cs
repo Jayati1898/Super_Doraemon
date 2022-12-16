@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,8 +10,6 @@ public class Finish : MonoBehaviour
     private bool levelCompleted = false;
 
     private int sceneID;
-
-    public GameObject passport;
 
     private void Start()
     {
@@ -34,12 +31,7 @@ public class Finish : MonoBehaviour
         sceneID = SceneManager.GetActiveScene().buildIndex;
         if (sceneID == 3)
         {
-            passport = GameObject.FindGameObjectWithTag("passport");
-            if(passport == null)
-            {
-                SceneManager.LoadScene(4);
-            }
-            //SceneManager.LoadScene(4);
+            SceneManager.LoadScene(4);
         }
         else
         {
