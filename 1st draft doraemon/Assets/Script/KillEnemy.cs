@@ -24,7 +24,7 @@ public class KillEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.gameObject.CompareTag("Enemy")) || (collision.gameObject.CompareTag("passport")))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
 
             Destroy(collision.gameObject);
@@ -32,9 +32,15 @@ public class KillEnemy : MonoBehaviour
 
 
         }
+        else if (collision.gameObject.CompareTag("passport"))
+        {
+            Destroy(collision.gameObject);
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            Lives.CurLives--;
+        }
         else if (collision.gameObject.CompareTag("Trap"))
         {
-            if (Lives.CurLives > 1)
+            if (Lives.CurLives > 0)
             {
                 Lives.CurLives--;
                 Tutorial_on_off.CurTutorial = 0;

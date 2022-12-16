@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &853220291697451276
+--- !u!1 &8495224187433099774
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 853220291697451278}
-  - component: {fileID: 853220291697451277}
+  - component: {fileID: 5771569070001120037}
+  - component: {fileID: 3134297011880679494}
   m_Layer: 0
   m_Name: Heart Manager
   m_TagString: Untagged
@@ -17,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &853220291697451278
+--- !u!4 &5771569070001120037
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853220291697451276}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 418.3858, y: 217.71689, z: 22.696463}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 8495224187433099774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 686.8043, y: 254.81126, z: 26.43457}
+  m_LocalScale: {x: 1.1647, y: 1.1647, z: 1.1647}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &853220291697451277
+--- !u!114 &3134297011880679494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853220291697451276}
+  m_GameObject: {fileID: 8495224187433099774}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53726738a53524e439a5f006cd077d1c, type: 3}
@@ -47,3 +47,4 @@ MonoBehaviour:
   Three_Lives: {fileID: 0}
   Two_Lives: {fileID: 0}
   One_Lives: {fileID: 0}
+  Zero_Lives: {fileID: 0}

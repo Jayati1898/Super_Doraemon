@@ -12,6 +12,8 @@ public class Finish : MonoBehaviour
 
     private int sceneID;
 
+    public GameObject passport;
+
     private void Start()
     {
         finishSound = GetComponent<AudioSource>();
@@ -32,7 +34,12 @@ public class Finish : MonoBehaviour
         sceneID = SceneManager.GetActiveScene().buildIndex;
         if (sceneID == 3)
         {
-            SceneManager.LoadScene(4);
+            passport = GameObject.FindGameObjectWithTag("passport");
+            if(passport == null)
+            {
+                SceneManager.LoadScene(4);
+            }
+            //SceneManager.LoadScene(4);
         }
         else
         {

@@ -23,7 +23,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
         {
-            if (Lives.CurLives > 1)
+            if (Lives.CurLives > 0)
             {
                 Lives.CurLives--;
                 Die_restart();
